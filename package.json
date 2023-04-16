@@ -1,0 +1,9 @@
+{
+  "name": "result-component",
+  "version": "1.0.0",
+  "description": "A beautiful result summary component",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Musread",
+  "license": "ISC"
+}
