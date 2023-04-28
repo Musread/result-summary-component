@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "A beautiful result summary component",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "compile": "node-sass sass/main.scss app.css",
+    "watch": "node-sass sass/main.scss app.css -w"
+  },
   "author": "Musread",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
 }
