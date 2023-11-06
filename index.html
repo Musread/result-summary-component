@@ -12,48 +12,100 @@
       href="./assets/images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Results summary component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="app.css" />
+
+    <title>Frontend Mentor | Results summary component</title>
   </head>
   <body>
-    <!-- Your Result
-  76
-  of 100
+    <main class="container">
+      <div class="result">
+        <div class="result__left-side">
+          <h2 class="result__header">Your Result</h2>
+          <div class="result__score">
+            <span class="result__score-point">76</span>
+            <span class="result__score-max">of 100</span>
+          </div>
+          <div class="result__remark">Great</div>
+          <p class="result__text">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+        <div class="result__right-side">
+          <h2 class="heading-secondary u-margin-bottom-small">Summary</h2>
+          <ul class="result__categories">
+            <li class="result__categorie result__categorie--1">
+              <img
+                src="assets/images/icon-reaction.svg"
+                alt="reaction-logo"
+                class="result__logo"
+              />
+              <span class="result__categorie-name result__categorie-name--1"
+                >Reaction</span
+              >
+              <div class="result__categorie-score">
+                <span class="u-dark">80</span> / 100
+              </div>
+            </li>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+            <li class="result__categorie result__categorie--2">
+              <img
+                src="assets/images/icon-memory.svg"
+                alt="memory-logo"
+                class="result__logo"
+              />
+              <span class="result__categorie-name result__categorie-name--2"
+                >Memory</span
+              >
+              <div class="result__categorie-score">
+                <span class="u-dark">92</span> / 100
+              </div>
+            </li>
 
-  Reaction
-  80 / 100
+            <li class="result__categorie result__categorie--3">
+              <img
+                src="assets/images/icon-verbal.svg"
+                alt="verbal-logo"
+                class="result__logo"
+              />
+              <span class="result__categorie-name result__categorie-name--3"
+                >Verbal</span
+              >
+              <div class="result__categorie-score">
+                <span class="u-dark">61</span> / 100
+              </div>
+            </li>
 
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue -->
+            <li class="result__categorie result__categorie--4">
+              <img
+                src="assets/images/icon-visual.svg"
+                alt="visual-logo"
+                class="result__logo"
+              />
+              <span class="result__categorie-name result__categorie-name--4"
+                >Visual</span
+              >
+              <div class="result__categorie-score">
+                <span class="u-dark">72</span> / 100
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="btn-primary u-margin-top-small">Continue</a>
+        </div>
+      </div>
+    </main>
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://github.com/Musread">Musread</a>.
     </div>
   </body>
 </html>

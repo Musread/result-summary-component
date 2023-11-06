@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  // COLORS
+  --light-red: hsl(0, 100%, 67%);
+  --orange-yellow: hsl(39, 100%, 56%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+  --green-teal: hsl(166, 100%, 37%);
+
+  // BACKGROUND COLORS
+  --bg-light-red: hsla(0, 100%, 67%, 0.1);
+  --bg-orange-yellow: hsla(39, 100%, 56%, 0.1);
+  --bg-cobalt-blue: hsla(234, 85%, 45%, 0.1);
+  --bg-green-teal: hsla(166, 100%, 37%, 0.1);
+
+  // FONT COLORS
+  --font-light-red: hsla(0, 100%, 67%, 0.8);
+  --font-orange-yellow: hsla(39, 100%, 56%, 0.8);
+  --font-cobalt-blue: hsla(234, 85%, 45%, 0.8);
+  --font-green-teal: hsla(166, 100%, 37%, 0.8);
+
+  // GRADIENTS
+  --slate-blue: hsl(252, 100%, 67%);
+  --royal-blue: hsl(241, 81%, 54%);
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+
+  // FONT COLORS
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-grey-blue: hsl(224, 30%, 27%);
+}
+
+html {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+}

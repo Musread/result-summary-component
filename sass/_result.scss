@@ -1,0 +1,178 @@
+.result {
+  width: 52rem;
+  background-color: var(--white);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0rem 1.5rem 2rem var(--pale-blue);
+
+  @include respond {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  // ------- Code for the card's left side -----------
+  &__left-side {
+    background-image: linear-gradient(
+      180deg,
+      var(--slate-blue),
+      var(--royal-blue)
+    );
+    display: grid;
+    row-gap: 0.5rem;
+    justify-items: center;
+    padding: 3rem 1rem;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+
+    @include respond {
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+    }
+  }
+
+  &__header {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--light-lavender);
+    margin-bottom: 1rem;
+  }
+
+  &__score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent);
+  }
+
+  &__score-point {
+    color: var(--white);
+    font-size: 6rem;
+    font-weight: 700;
+  }
+
+  &__score-max {
+    color: var(--light-lavender);
+    font-size: 1.3rem;
+  }
+
+  &__remark {
+    color: var(--white);
+    font-size: 2.2rem;
+  }
+
+  &__text {
+    color: var(--light-lavender);
+    font-size: 1.2rem;
+    text-align: center;
+    width: 70%;
+
+    @include respond {
+      width: 60%;
+    }
+  }
+
+  // --------- Code for the card's right side ---------
+  &__right-side {
+    padding: 3rem;
+  }
+
+  &__categories {
+    list-style: none;
+    display: grid;
+    row-gap: 1.3rem;
+  }
+
+  &__categorie {
+    --border-size: 0.5px; // to change the border size of every categorie just in one property !
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow: visible;
+
+    &::before,
+    &::after {
+      --gutter-size: 1.3rem;
+      box-sizing: content-box;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &::before {
+      width: calc(100% - var(--gutter-size));
+      height: 100%;
+      border-top: var(--border-size) solid #fff;
+      border-bottom: var(--border-size) solid #fff;
+    }
+
+    &::after {
+      height: calc(100% - var(--gutter-size));
+      width: 100%;
+      border-left: var(--border-size) solid #fff;
+      border-right: var(--border-size) solid #fff;
+    }
+
+    &--1 {
+      background-color: var(--bg-light-red);
+      border: var(--border-size) solid var(--light-red);
+    }
+
+    &--2 {
+      background-color: var(--bg-orange-yellow);
+      border: var(--border-size) solid var(--orange-yellow);
+    }
+
+    &--3 {
+      background-color: var(--bg-green-teal);
+      border: var(--border-size) solid var(--green-teal);
+    }
+    &--4 {
+      background-color: var(--bg-cobalt-blue);
+      border: var(--border-size) solid var(--cobalt-blue);
+    }
+  }
+
+  &__logo {
+    width: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  &__categorie-name {
+    margin-right: auto;
+
+    &--1 {
+      color: var(--font-light-red);
+    }
+
+    &--2 {
+      color: var(--font-orange-yellow);
+    }
+
+    &--3 {
+      color: var(--font-green-teal);
+    }
+
+    &--4 {
+      color: var(--font-cobalt-blue);
+    }
+  }
+
+  &__categorie-score {
+    color: rgba(0, 0, 0, 0.4);
+  }
+}
