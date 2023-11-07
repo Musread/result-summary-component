@@ -15,9 +15,5 @@
 .DS_Store
 .prettierignore
 
-# Hide README files
-README.md
-README-template.md
-
 # Avid the project to be overwhelmed with node packages
 node_modules/
